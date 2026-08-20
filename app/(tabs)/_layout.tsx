@@ -51,7 +51,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="film"
         options={{
-          title: "Filme",
+          title: "Homem-Aranha: Um Novo Dia",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "film" : "film-outline"}

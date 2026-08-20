@@ -8,8 +8,8 @@ const categorias = [
       { id: "1a", titulo: "Oppenheimer", cor: "#1a1a2e", imagem: "https://th.bing.com/th/id/OIP.Oxz4RD27JiIxX-sP4Che0gHaLH?w=120&h=180&c=7&r=0&o=7&pid=1.7&rm=3"},
       { id: "1b", titulo: "Duna 2", cor: "#16213e", imagem: "" },
       { id: "1c", titulo: "O Caminho para El Dourado", cor: "#0f3460", imagem: "https://1.bp.blogspot.com/_X643PcxIPVk/Sm2sifpU54I/AAAAAAAAYP4/qUaFZbuwio0/s1600/zmla2w.jpg" },
-      { id: "1d", titulo: "Poor Things", cor: "#533483", imagem: "" },
-      { id: "1e", titulo: "Saltburn", cor: "#2b2d42", imagem: "" },
+      { id: "1d", titulo: "Homem-Aranha:UM Novo Dia", cor: "#533483", imagem: "https://th.bing.com/th/id/OSK.zXW5QqjW2GCYxKN7smuMdtEEympc4FxKvzZZj53boP0?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" },
+      { id: "1e", titulo: "The Boys", cor: "#2b2d42", imagem: "https://tse1.mm.bing.net/th/id/OIP.7O1XGMVIldnKYa1TfVZZUQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" },
     ],
   },
   {
@@ -33,9 +33,9 @@ const categorias = [
   },
   {
     id: "4",
-    titulo: "Documentários",
+    titulo: "Suspense",
     filmes: [
-      { id: "4a", titulo: "Free Solo", cor: "#0d0d0d", imagem: "" },
+      { id: "4a", titulo: "A empregada", cor: "#0d0d0d", imagem: "https://th.bing.com/th/id/OIP.VvN7aAPcXJoZclkbUU4T0AHaK4?w=115&h=180&c=7&r=0&o=7&pid=1.7&rm=3" },
       { id: "4b", titulo: "The Social Dilemma", cor: "#001011", imagem: "" },
       { id: "4c", titulo: "My Octopus Teacher", cor: "#002b36", imagem: "" },
     ],
