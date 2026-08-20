@@ -1,4 +1,4 @@
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Flat} from 'react-native';
 
 const categorias = [
   {
@@ -55,7 +55,8 @@ const categorias = [
 export default function App() {
     return (
 
-        <View></View>
+        <View>
+        </View>
     );
 }
 
