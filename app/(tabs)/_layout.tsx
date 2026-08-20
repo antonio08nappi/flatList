@@ -36,12 +36,12 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="Netflix"
         options={{
-          title: "Início",
+          title: "Netflix",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "home" : "home-outline"}
+              name={focused ? "eye" : "eye-outline"}
               size={24}
               color={color}
             />
