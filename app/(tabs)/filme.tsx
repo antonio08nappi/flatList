@@ -46,7 +46,7 @@ export default function FilmeHomemAranha() {
               <View style={styles.ageBadge}>
                 <Text style={styles.ageText}>14</Text>
               </View>
-              <Text style={styles.meta}>2h 25min</Text>
+              <Text style={styles.meta}>2h 24min</Text>
               <View style={styles.hdBadge}>
                 <Text style={styles.hdText}>HD</Text>
               </View>
