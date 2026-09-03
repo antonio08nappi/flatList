@@ -63,12 +63,12 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="flex"
+        name="dados"
         options={{
-          title: "Flexbox",
+          title: "Dados dos filmes",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "cube" : "cube-outline"}
+              name={focused ? "data" : "data-outline"}
               size={24}
               color={color}
             />
