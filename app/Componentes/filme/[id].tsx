@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {View, Text, Image, ScrollView, TouchableOpacity, StyleSheet, Dimensions, StatusBar, SafeAreaView} from "react-native";
+import { useLocalSearchParams } from "expo-router";
 
 
 const { width, height } = Dimensions.get("window");
@@ -10,6 +11,8 @@ const POSTER =
 
 export default function FilmeHomemAranha() {
   const [naMinhaLista, setNaMinhaLista] = useState(false);
+
+  const id = useLocalSearchParams();
 
   return (
     <View style={styles.container}>
