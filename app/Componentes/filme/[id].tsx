@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {View, Text, Image, ScrollView, TouchableOpacity, StyleSheet, Dimensions, StatusBar, SafeAreaView} from "react-native";
+import { dadosDosFilmes } from '../dadosDosFilmes';
 import { useLocalSearchParams } from "expo-router";
 
 
@@ -12,8 +13,20 @@ const POSTER =
 export default function FilmeHomemAranha() {
   const [naMinhaLista, setNaMinhaLista] = useState(false);
 
-  const id = useLocalSearchParams();
+  const {id} = useLocalSearchParams();
 
+  console.log('ID recebido:', id);
+
+  const categorias = dadosDosFilmes().categorias;
+  console.log('Categorias:', categorias);
+  const filmeEncontrados = categorias
+    .flatMap((categoria) => categoria.filmes)
+    .find((f) => f.id === id);
+
+  console.log('Filme encontrado:', filmeEncontrados);
+  const filme: FilmesProps = {
+    ...filmeEncontrados,
+  };
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#000" />
@@ -26,7 +39,7 @@ export default function FilmeHomemAranha() {
         {/* Hero / Banner */}
         <View style={styles.hero}>
           <Image
-            source={{ uri: POSTER }}
+            source={{ uri: filme.imagem || POSTER }}
             style={styles.poster}
             resizeMode="cover"
           />
@@ -41,7 +54,7 @@ export default function FilmeHomemAranha() {
 
           {/* titulo + meta info */}
           <View style={styles.heroContent}>
-            <Text style={styles.title}>Homem-Aranha:{"\n"}Um Novo Dia</Text>
+            <Text style={styles.title}>{filme.titulo}</Text>
 
             <View style={styles.metaRow}>
               <Text style={styles.match}>98% relevante</Text>

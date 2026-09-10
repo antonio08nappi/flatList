@@ -12,7 +12,7 @@ export default function renderCategoria({item}:{item:any}){
       // showsHorizontalScrollIndicator={false}
       contentContainerStyle={{paddingBottom:40}}
       renderItem={({item})=>(
-          <Link href={"Componentes/filme/" + item.id}>
+          <Link href={`Componentes/filme/${item.id}`}>
           <Image
           source={{uri:item.imagem}}
           style={[styles.filme]}

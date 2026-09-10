@@ -3,6 +3,7 @@ import {View, StyleSheet, FlatList, Image} from 'react-native';
 import { dadosDosFilmes } from '../Componentes/dadosDosFilmes';
 import renderCategoria from '../Componentes/cardCategorias';
 
+
 const categorias = dadosDosFilmes().categorias;
 
 export default function App() {
