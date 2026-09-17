@@ -60,9 +60,9 @@ export default function FilmeHomemAranha() {
               <Text style={styles.match}>98% relevante</Text>
               <Text style={styles.meta}>2026</Text>
               <View style={styles.ageBadge}>
-                <Text style={styles.ageText}>14</Text>
+                <Text style={styles.ageText}>{filme.classificacao}</Text>
               </View>
-              <Text style={styles.meta}>2h 24min</Text>
+              <Text style={styles.meta}>{filme.duracao}</Text>
               <View style={styles.hdBadge}>
                 <Text style={styles.hdText}>HD</Text>
               </View>
@@ -92,25 +92,22 @@ export default function FilmeHomemAranha() {
         {/* descricao */}
         <View style={styles.infoBlock}>
           <Text style={styles.description}>
-            Quatro anos se passaram desde Sem Volta para Casa. Peter agora vive sozinho, apagado
-            da memória de quem ama, e se dedica 100% a proteger Nova York como Homem-Aranha. 
-            A pressão de ver os amigos seguirem em frente sem ele desencadeia uma mudança que ele talvez não consiga 
-            controlar e essa transformação pode ser a única chance de deter uma ameaça poderosa que ninguém consegue sequer ver.
+            {filme.descricao}        
           </Text>
 
           <Text style={styles.cast}>
             <Text style={styles.label}>Elenco: </Text>
-            Tom Holland, Zendaya, Sadie Sink, Jacob Batalon, Jon Bernthal
+            {filme.elenco}
           </Text>
 
           <Text style={styles.genres}>
             <Text style={styles.label}>Gêneros: </Text>
-            Ação, Aventura, Ficção científica
+            {filme.genero}
           </Text>
 
           <Text style={styles.director}>
             <Text style={styles.label}>Direção: </Text>
-            Destin Daniel Cretton
+            {filme.direcao}
           </Text>
         </View>
 

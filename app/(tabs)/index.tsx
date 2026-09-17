@@ -2,6 +2,7 @@ import { Link } from 'expo-router';
 import {View, StyleSheet, FlatList, Image} from 'react-native';
 import { dadosDosFilmes } from '../Componentes/dadosDosFilmes';
 import renderCategoria from '../Componentes/cardCategorias';
+import  InputBusca from '../Componentes/inputBusca';
 
 
 const categorias = dadosDosFilmes().categorias;
@@ -9,6 +10,7 @@ const categorias = dadosDosFilmes().categorias;
 export default function App() {
     return (
         <View style={styles.corFundo}>
+            <InputBusca/>
             <FlatList
                         data={categorias}
                         keyExtractor={item => item.id}

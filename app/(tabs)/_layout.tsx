@@ -41,7 +41,7 @@ export default function TabLayout() {
           title: "Netflix",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "eye" : "eye-outline"}
+              name={focused ? "home" : "home-outline"}
               size={24}
               color={color}
             />
@@ -68,7 +68,7 @@ export default function TabLayout() {
           title: "Dados dos filmes",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "data" : "data-outline"}
+              name={focused ? "eye" : "eye-outline"}
               size={24}
               color={color}
             />
