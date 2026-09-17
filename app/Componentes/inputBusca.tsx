@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {View,TextInput,TouchableOpacity,Text,StyleSheet,} from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
 
@@ -14,7 +15,7 @@ export default function InputBusca() {
     }
 
     router.push({
-      pathname: `/Componentes/busca/${encodeURIComponent(busca)}`,
+      pathname: "/Componentes/busca/[query]",
       params: { query: busca },
     });
   }

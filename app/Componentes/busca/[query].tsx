@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { useLocalSearchParams } from 'expo-router';
+import { Stack, useLocalSearchParams } from 'expo-router';
 
 export default function BuscaFilmes() {
   const { query } = useLocalSearchParams<{ query: string }>();
@@ -11,6 +11,11 @@ export default function BuscaFilmes() {
 
   return (
     <View style={styles.container}>
+        <Stack.Screen
+        options={{
+          title: `Resultados da busca: ${nomePesquisado}`,
+        }}
+      />
       <Text style={styles.titulo}>Resultados da busca</Text>
 
       <Text style={styles.texto}>
